@@ -1,0 +1,17 @@
+# Browser profiles and execution logs can contain authenticated session data.
+browser_session/
+atoz_grabber.log
+
+# The archive duplicates the editable source directory.
+AtoZ_Grabber.zip
+
+# Local configuration, Python caches, and editor state.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+__pycache__/
+*.py[cod]
+.vscode/
+.idea/

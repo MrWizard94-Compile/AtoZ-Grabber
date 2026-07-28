@@ -1,0 +1,55 @@
+{
+    "atoz_url": "https://atoz.amazon.work/shifts/schedule/find?ref=nv_schd",
+
+    "login": {
+        "username": "robbulkl"
+    },
+
+    "preferred_shifts": [
+
+        {
+            "label": "",
+            "start_time": "3:10 AM",
+            "end_time": "11:55 AM"
+        }
+    ],
+
+    "time_match_mode": "exact",
+
+    "blackout_days": ["Monday", "Sunday"],
+
+    "job_types": ["Sorting"],
+
+    "location": "WNY2",
+
+    "polling": {
+        "poll_interval_seconds": 2,
+        "max_poll_duration_minutes": 10,
+        "page_load_wait_seconds": 2
+    },
+
+    "daemon": {
+        "cycle_interval_seconds": 2,
+        "jitter_seconds": 1,
+        "start_hour": 1,
+        "end_hour": 24,
+        "session_refresh_minutes": 10
+    },
+
+    "notifications": {
+        "enabled": true,
+        "sound": true
+    },
+
+    "logging": {
+        "log_file": "atoz_grabber.log",
+        "max_log_size_mb": 10,
+        "backup_count": 3
+    },
+
+    "browser": {
+        "headless": true,
+        "user_data_dir": "./browser_session",
+        "slow_mo_ms": 50
+    }
+}
